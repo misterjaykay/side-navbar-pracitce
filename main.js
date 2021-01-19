@@ -96,3 +96,15 @@ function createNewGIF() {
     fifthDiv.appendChild(newEmbed5);
 }
 
+const darkModeBtn = document.querySelector(".darkMode");
+
+darkModeBtn.addEventListener("click", () => {
+    backColor = document.body.style.background;
+    // console.log(backColor);
+    // document.body.style.background = "#000000";
+    if (backColor === "rgb(0, 0, 0)") {
+        document.body.style.background = "#f3f5f9";
+    } else {
+        document.body.style.background = "#000000";
+    }
+})
