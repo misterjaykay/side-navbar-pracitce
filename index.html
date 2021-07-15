@@ -22,24 +22,35 @@
         <div class="main_content">
             <div class="header">Welcome!! Have a nice day.</div>
             <div class="info">
-                <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, accusantium quasi quis ipsa nihil
-                    amet? Repellat adipisci amet tempore, sunt molestias blanditiis quisquam optio nisi dolor ipsum ab?
-                    Aut nihil, iste earum aspernatur amet id ab porro distinctio dolore doloremque provident fugit
-                    temporibus assumenda eius mollitia adipisci, esse ipsa reprehenderit.
+                <div class="card">
+                    <div class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, accusantium quasi quis ipsa
+                        nihil
+                        amet? Repellat adipisci amet tempore, sunt molestias blanditiis quisquam optio nisi dolor ipsum
+                        ab?
+                        Aut nihil, iste earum aspernatur amet id ab porro distinctio dolore doloremque provident fugit
+                        temporibus assumenda eius mollitia adipisci, esse ipsa reprehenderit.
+                    </div>
                 </div>
-                <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nisi blanditiis eos quibusdam
-                    laborum esse enim, cupiditate, dolor corporis recusandae sapiente illum sint dicta veniam et
-                    deserunt atque eligendi. Neque quaerat molestias vel nemo in excepturi veniam, totam deserunt nulla!
+                <div class="card">
+                    <div class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nisi blanditiis eos quibusdam
+                        laborum esse enim, cupiditate, dolor corporis recusandae sapiente illum sint dicta veniam et
+                        deserunt atque eligendi. Neque quaerat molestias vel nemo in excepturi veniam, totam deserunt
+                        nulla!
+                    </div>
                 </div>
-                <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi alias aspernatur odit quibusdam
-                    dolore eaque cumque, ea molestias doloremque similique modi iusto, provident adipisci recusandae
-                    sapiente accusamus, nihil amet rerum accusantium mollitia pariatur fuga dolor! Repellat maiores
-                    temporibus eligendi sint nostrum dolorum reprehenderit laboriosam, deserunt commodi nam asperiores
-                    quaerat et ratione sit nulla odit consequuntur sequi ea necessitatibus dicta ad doloremque. Eligendi
-                    quidem voluptates quibusdam dolorem nisi veritatis incidunt. Et.
+                <div class="card">
+                    <div class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi alias aspernatur odit quibusdam
+                        dolore eaque cumque, ea molestias doloremque similique modi iusto, provident adipisci recusandae
+                        sapiente accusamus, nihil amet rerum accusantium mollitia pariatur fuga dolor! Repellat maiores
+                        temporibus eligendi sint nostrum dolorum reprehenderit laboriosam, deserunt commodi nam
+                        asperiores
+                        quaerat et ratione sit nulla odit consequuntur sequi ea necessitatibus dicta ad doloremque.
+                        Eligendi
+                        quidem voluptates quibusdam dolorem nisi veritatis incidunt. Et.
+                    </div>
                 </div>
                 <div class="flex-container">
                     <div class="first-gif"></div>
@@ -52,6 +63,18 @@
         </div>
     </div>
     <script src="main.js"></script>
+    <script src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+        
+        //It also supports NodeList
+        // VanillaTilt.init(document.querySelectorAll(".your-element"));
+    </script>
 </body>
 
 </html>
